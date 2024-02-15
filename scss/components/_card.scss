@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+.card-intro {
+	text-align: center;
+}
+
+.card-intro__title {
+	margin-bottom: func.em(16, 22);
+}
+
+.card-intro__title .light {
+	color: var.$color-gray;
+}
+
+.card-intro__subtitle {
+	margin-bottom: func.em(36, 14);
+}
+
+.card-content__image img {
+	width: 100%;
+	height: auto;
+}
+
+@media (min-width: 37.5em) {
+	.card-intro__title {
+		margin-bottom: func.em(18, 34);
+		font-size: func.em(30, var.$font-size-primary);
+	}
+}

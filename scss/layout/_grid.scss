@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+.wrapper__content {
+	padding: func.em(60, var.$font-size-primary) 0
+		func.em(210, var.$font-size-primary);
+}
+
+.container {
+	padding: 0 1.5em;
+}
+
+@media (min-width: 48em) {
+	.wrapper > .container {
+		text-align: center;
+	}
+
+	.wrapper__content {
+		display: inline-block;
+		max-width: func.em(650, var.$font-size-primary);
+		text-align: left;
+	}
+}

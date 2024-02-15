@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+header {
+	margin-bottom: func.em(42, var.$font-size-primary);
+}
+
+header h1 {
+	text-align: center;
+}
+
+#logo {
+	display: block;
+	width: func.em(43);
+	height: func.em(13);
+	margin: 0 auto;
+	background: url('../images/logo.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-indent: -9999px;
+}

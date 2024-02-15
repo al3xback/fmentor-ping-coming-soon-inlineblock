@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1em 0;
+	font-size: 0.75em;
+	text-align: center;
+}
+
+.footer__content {
+	margin-bottom: func.em(18, var.$font-size-primary);
+	color: var.$color-gray;
+}
+
+.socmed-links {
+	display: inline-block;
+	margin: 0 auto func.em(44, var.$font-size-primary);
+}
+
+.socmed-link {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.socmed-link:not(:first-child) {
+	margin-left: 1em;
+}
+
+@media (min-width: 48em) {
+	.socmed-links {
+		margin-bottom: func.em(32, var.$font-size-primary);
+	}
+}

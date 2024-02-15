@@ -1,0 +1,7 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+.section__head {
+	padding: 0 func.em(20, var.$font-size-primary);
+	margin-bottom: func.em(52, var.$font-size-primary);
+}
