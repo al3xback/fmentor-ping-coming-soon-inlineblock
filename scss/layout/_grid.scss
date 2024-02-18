@@ -17,6 +17,7 @@
 
 	.wrapper__content {
 		display: inline-block;
+		width: 100%;
 		max-width: func.em(650, var.$font-size-primary);
 		text-align: left;
 	}
