@@ -6,13 +6,14 @@ header {
 }
 
 header h1 {
+	font-size: inherit;
 	text-align: center;
 }
 
 #logo {
 	display: block;
-	width: func.em(43);
-	height: func.em(13);
+	width: func.em(60, var.$font-size-primary);
+	height: func.em(18, var.$font-size-primary);
 	margin: 0 auto;
 	background: url('../images/logo.svg');
 	background-repeat: no-repeat;
